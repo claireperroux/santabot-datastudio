@@ -1,0 +1,52 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 5em;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5em;
+    background-color: #222;
+    color: #0f0;
+    border: 1px solid #0f0;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #222;
+    color: #0f0;
+    border: 1px solid #0f0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+p.error {
+    color: #f00;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000;
+}

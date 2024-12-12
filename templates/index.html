@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SantaBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>SantaBot</h1>
+    <form method="POST">
+        <input type="number" name="code1" min="0" max="9" required>
+        <input type="number" name="code2" min="0" max="9" required>
+        <input type="number" name="code3" min="0" max="9" required>
+        <input type="number" name="code4" min="0" max="9" required>
+        <button type="submit">Envoyer</button>
+    </form>
+    <p class="{{ 'error' if message == 'Échec ! Essayez à nouveau' else '' }}">{{ message }}</p>
+</body>
+</html>
